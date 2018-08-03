@@ -4,8 +4,8 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db/knex');
 
-router.get('/', (req,res) => {
-  console.log('/users');
+router.post('/login', (req,res) => {
+  
   res.send('users smoketest');
 });
 
